@@ -1,2 +1,10 @@
 ---
 gitlab_repository_installation_script_url: "https://packages.gitlab.com/install/repositories/gitlab/{{ gitlab_edition }}/script.deb.sh"
+gitlab_package_dependencies:
+  - openssh-server
+  - postfix
+  - curl
+  - openssl
+gitlab_service_dependencies:
+  - name: sshd
+  - name: postfix

@@ -1,0 +1,9 @@
+---
+- name: gitlab-centos7
+  box: centos/7
+  ram: 1024
+  ip: 192.168.10.121
+- name: gitlab-debian
+  box: debian/jessie64
+  ram: 1024
+  ip: 192.168.10.122

@@ -2,7 +2,7 @@
 # General config.
 gitlab_external_url: "https://gitlab/"
 gitlab_git_data_dir: "/var/opt/gitlab/git-data"
-gitlab_edition: "gitlab-ce"
+gitlab_edition: "gitlab-ce-7.11.2~omnibus-1"
 gitlab_backup_path: "/var/opt/gitlab/backups"
 
 # SSL Configuration.

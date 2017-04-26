@@ -136,6 +136,9 @@ Afterwards an DB issue appeared: https://gitlab.com/gitlab-org/omnibus-gitlab/is
 
 In my case this was just my fault, I f*** up the file permissions for psql while playing around.
 
+## Upgrade ce to ee
+Following the instructions on: https://about.gitlab.com/upgrade-to-package-repository/ this can be easily done by just installing the ee package.
+
 ## License
 
 MIT / BSD

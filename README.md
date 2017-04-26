@@ -123,6 +123,19 @@ None.
 
     gitlab_external_url: "https://gitlab.example.com/"
 
+## Backup Restore
+Restoring a Backup is quite simple, just follow the official documentation regarding backups. In our case as omnibus installation, https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/raketasks/backup_restore.md#omnibus-installations did the trick.
+
+For what ever reason, the migration after the update failed with not working file permissions. Found a solution at: https://gitlab.com/gitlab-org/omnibus-gitlab/issues/1601
+
+```
+@scampsAlberto for some reason it appears we weren't able to set the group sticky flag. Try sudo chmod 2770 "gitlab/path"/repositories for now to hopefully work around the issue.
+```
+
+Afterwards an DB issue appeared: https://gitlab.com/gitlab-org/omnibus-gitlab/issues/249
+
+In my case this was just my fault, I f*** up the file permissions for psql while playing around.
+
 ## License
 
 MIT / BSD
